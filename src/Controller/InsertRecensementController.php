@@ -14,7 +14,9 @@ class InsertRecensementController extends AbstractController
     {
         return $this->render('insert_recensement/index.html.twig', [
             'controller_name' => 'ControlerReactController',
-          //  'habitants' => $habitantRepository->findAll(),
+             //'habitants' => $habitantRepository->findAll(),
+             'formulaire' =>''
+          
             
         ]);
 

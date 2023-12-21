@@ -1,5 +1,3 @@
-//import { Composant } from '../composant';
-import { Header } from '../resources_projet/header'
 import React, { useState } from 'react';
 
 
@@ -13,6 +11,8 @@ function Formulaire() {
   const [codePostal, setPostal] = useState('');
   const [dateDeNaissance, setDate] = useState('');
   const [sex, setSex] = useState('');
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,28 +30,20 @@ function Formulaire() {
     )*/
 
   }
+
   const handleChange = (event) => {
     setSex(event.target.value)
   }
 
 
+
+
   return (
 
     <div>
-      <div>
-        <ul>
-          <a href=""> Insersion habitant</a>
-        </ul>
-        <ul>
-          <a href="search_habitant"> Recherche</a>
-        </ul>
-
-
-      </div>
-
-
       <form onSubmit={handleSubmit}>
         <div>
+        <br></br>
           <label>
             Nom :
             <input type="text" name="nom"
@@ -110,7 +102,7 @@ function Formulaire() {
         </div>
         <input type="submit" value="Envoyer" />
       </form>
-
+      <br></br>
     </div>
 
 

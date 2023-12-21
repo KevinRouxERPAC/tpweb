@@ -1,10 +1,34 @@
-//import Header from './components/header';
+import React, { useState } from 'react';
 
 function Search(){
+
+  const [nom, setNom] = useState('');
+  const [prenom, setPrenom] = useState('');
+
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    alert(`Formulaire soumit...`);
+
+    /*InsertToBDD(
+      nom,
+      prenom,
+      adresse,
+      codePostal,
+      sex,
+      dateDeNaissance,
+      email
+    )*/
+
+  }
+
 
     return(
         <form onSubmit={handleSubmit}>
         <div>
+        <br></br>
+          <div>Recherche d'un habitant</div>
           <label>
             Nom :
             <input type="text" name="nom"
@@ -19,6 +43,7 @@ function Search(){
               }
             />
           </label>
+          <br></br>
         </div>
         <input type="submit" value="Envoyer" />
       </form>

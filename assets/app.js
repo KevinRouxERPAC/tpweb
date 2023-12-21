@@ -14,8 +14,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { Home } from './resources_projet/home.js';
-import {Composant} from './composant.js';
-import {Formulaire} from './resources_projet/formulaire.js'
+import {Search} from './resources_projet/search_habitant.js';
+import {Formulaire} from './resources_projet/formulaire.js';
+import {ShowHabitants} from './resources_projet/liste_habitants.js';
 
 registerReactControllerComponents(require.context('./react/controllers', true, /\.(j|t)sx?$/));
 
@@ -27,17 +28,8 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
       <Home/>
+      <Formulaire/>
+      <Search/>
+      <ShowHabitants/>
     </React.StrictMode>
 )
-/*
-const root = ReactDOM.createRoot(
-  document.getElementById('composant') //as HTMLElement
-);
-
-
-root.render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>
-)
-*/

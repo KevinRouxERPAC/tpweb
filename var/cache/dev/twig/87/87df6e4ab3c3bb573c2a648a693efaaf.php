@@ -99,9 +99,10 @@ class __TwigTemplate_4ad93cf68c5a4cbbc9d361785bd92ecd extends Template
 \t\t}
 \t</style>
 
-\t<div
-\t\tclass=\"example-wrapper\">
+\t<div class=\"example-wrapper\">
 \t\t<div id=\"composant\"></div>
+
+
 \t</div>
 ";
         
@@ -157,11 +158,12 @@ class __TwigTemplate_4ad93cf68c5a4cbbc9d361785bd92ecd extends Template
 \t\t}
 \t</style>
 
-\t<div
-\t\tclass=\"example-wrapper\">
+\t<div class=\"example-wrapper\">
 \t\t<div id=\"composant\"></div>
+
+
 \t</div>
 {% endblock %}
-", "controler_react/index.html.twig", "/home/electropro/Documents/TP_final/recensement/templates/controler_react/index.html.twig");
+", "controler_react/index.html.twig", "/home/stud/Documents/Admin_web/TP6/projetWeb/templates/controler_react/index.html.twig");
     }
 }
