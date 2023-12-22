@@ -1,9 +1,27 @@
 import React, { useState } from 'react';
 
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import {Formulaire} from './formulaire'
+const express = require('express');
+const mysql = require('mysql');
+const app = express();
+
+app.use(express.json());
+
+const db = mysql.createConnection({
+host: 'localhost',
+user: 'root',
+password: 'password',
+database: 'example'
+});
+
+db.connect((err) => {
+    if (err) throw err;
+    console.log('MySql Connected...');
+   });
+
+   
  
 function Home(){
+
 
     return (
         <div>

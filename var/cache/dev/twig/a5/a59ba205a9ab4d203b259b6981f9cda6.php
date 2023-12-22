@@ -86,29 +86,12 @@ class __TwigTemplate_b8ffd5321b03437a1938db2400714759 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "\t<style>
-\t\t.example-wrapper {
-\t\t\tmargin: 1em auto;
-\t\t\tmax-width: 800px;
-\t\t\twidth: 95%;
-\t\t\tfont: 18px / 1.5 sans-serif;
-\t\t}
-\t\t.example-wrapper code {
-\t\t\tbackground: #F5F5F5;
-\t\t\tpadding: 2px 6px;
-\t\t}
-\t</style>
+        echo "
+\t<p>";
+        // line 8
+        echo twig_escape_filter($this->env, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 8, $this->source); })()), "html", null, true);
+        echo "</p>
 
-\t<div class=\"example-wrapper\">
-\t\t<h1>Hello
-\t\t\t";
-        // line 22
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 22, $this->source); })()), "html", null, true);
-        echo "!</h1>
-
-
-\t\t<div id=\"formulaire\"></div>
-\t</div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -139,7 +122,7 @@ class __TwigTemplate_b8ffd5321b03437a1938db2400714759 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  106 => 22,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -150,26 +133,9 @@ class __TwigTemplate_b8ffd5321b03437a1938db2400714759 extends Template
 {% endblock %}
 
 {% block body %}
-\t<style>
-\t\t.example-wrapper {
-\t\t\tmargin: 1em auto;
-\t\t\tmax-width: 800px;
-\t\t\twidth: 95%;
-\t\t\tfont: 18px / 1.5 sans-serif;
-\t\t}
-\t\t.example-wrapper code {
-\t\t\tbackground: #F5F5F5;
-\t\t\tpadding: 2px 6px;
-\t\t}
-\t</style>
 
-\t<div class=\"example-wrapper\">
-\t\t<h1>Hello
-\t\t\t{{ controller_name }}!</h1>
+\t<p>{{formulaire}}</p>
 
-
-\t\t<div id=\"formulaire\"></div>
-\t</div>
 {% endblock %}
 ", "insert_recensement/index.html.twig", "/home/stud/Documents/Admin_web/TP6/projetWeb/templates/insert_recensement/index.html.twig");
     }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 
 function Formulaire() {
@@ -7,39 +8,54 @@ function Formulaire() {
   const [prenom, setPrenom] = useState('');
   const [adresse, setAdresse] = useState('');
   const [email, setEmail] = useState('');
-
   const [telephone, setTelephone] = useState('');
   const [dateDeNaissance, setDate] = useState('');
-  const [sex, setSex] = useState('');
+  const [genre, setGenre] = useState('');
 
 
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     alert(`Formulaire soumit...`);
 
-    /*InsertToBDD(
-      nom,
-      prenom,
-      adresse,
-      telephone,
-      sex,
-      dateDeNaissance,
-      email
-    )*/
+    try {
+      const habitant = {
+          nom,
+          prenom,
+          adresse,
+          email,
+          telephone,
+          dateDeNaissance,
+          genre
+      };
+
+      const response = await axios.post('mysql://root:password@127.0.0.1:3306/example', habitant);
+      console.log(response.data);
+
+      // Clear the form
+      setNom('');
+      setPrenom('');
+      setAdresse('');
+      setEmail('');
+      setTelephone('');
+      setDate('');
+      setGenre('');
+      
+    } catch (error) {
+        console.error(error);
+    }
 
   }
 
   const handleChange = (event) => {
-    setSex(event.target.value)
+    setGenre(event.target.value)
   }
 
 
 
 
   return (
-
     <div>
       <h3>Formulaire d'ajout d'habitant</h3>
       <form onSubmit={handleSubmit}>
@@ -64,7 +80,7 @@ function Formulaire() {
         <div>
         <label>
             Date de naissance :
-            <input type="date" name="naissance"
+            <input type="date" name="birth"
               value={dateDeNaissance} onChange={(e) => setDate(e.target.value)
               }
             />
@@ -88,14 +104,14 @@ function Formulaire() {
           </label>
           <label>
             Téléphone :
-            <input type="number" name="postal"
+            <input type="text" name="phone"
               value={telephone} onChange={(e) => setTelephone(e.target.value)
               }
             />
           </label>
           <label>
             Genre :
-            <select value={sex} onChange={handleChange}>
+            <select value={genre} onChange={handleChange}>
               <option value="M">Homme</option>
               <option value="F">Femme</option>
               <option value="X">Autre</option>
@@ -103,7 +119,7 @@ function Formulaire() {
           </label>
 
         </div>
-        <input type="submit" value="Envoyer" />
+        <input type="submit" value="Ajouter" />
       </form>
       <br></br>
     </div>

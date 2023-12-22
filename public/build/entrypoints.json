@@ -3,7 +3,7 @@
     "app": {
       "js": [
         "/build/runtime.js",
-        "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_react-dom_client_js-n-918217.js",
+        "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_express_index_js-node-862dff.js",
         "/build/app.js"
       ],
       "css": [

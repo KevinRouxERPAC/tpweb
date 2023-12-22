@@ -14,7 +14,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { Home } from './resources_projet/home.js';
-import {Search} from './resources_projet/search_habitant.js';
 import {Formulaire} from './resources_projet/formulaire.js';
 import {ShowHabitants} from './resources_projet/liste_habitants.js';
 
@@ -29,7 +28,6 @@ root.render(
     <React.StrictMode>
       <Home/>
       <Formulaire/>
-      <Search/>
       <ShowHabitants/>
     </React.StrictMode>
 )

@@ -409,3 +409,12 @@ a06aec,127.0.0.1,GET,http://localhost:8000/recensement,1703232087,,200
 bbf97c,127.0.0.1,GET,http://localhost:8000/recensement,1703232104,,200
 8ff671,127.0.0.1,GET,http://localhost:8000/recensement,1703232125,,200
 2a83d0,127.0.0.1,GET,http://localhost:8000/recensement,1703232142,,200
+6cf0d7,127.0.0.1,GET,http://localhost:8000/,1703232465,,404
+84812c,127.0.0.1,GET,http://localhost:8000/recensement/insert,1703232470,,200
+d61091,127.0.0.1,GET,http://localhost:8000/recensement,1703232473,,200
+241ac0,127.0.0.1,GET,http://localhost:8000/recensement,1703232495,,200
+ba2310,127.0.0.1,GET,http://localhost:8000/recensement,1703232689,,200
+3e00da,127.0.0.1,GET,http://localhost:8000/recensement,1703233736,,200
+5604a6,127.0.0.1,GET,http://localhost:8000/recensement,1703234828,,200
+a3d3d4,127.0.0.1,GET,http://localhost:8000/recensement,1703235003,,200
+8eddb5,127.0.0.1,GET,http://localhost:8000/recensement,1703235377,,200
