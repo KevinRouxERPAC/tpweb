@@ -411,3 +411,17 @@ bbf97c,127.0.0.1,GET,http://localhost:8000/recensement,1703232104,,200
 2a83d0,127.0.0.1,GET,http://localhost:8000/recensement,1703232142,,200
 e0452a,127.0.0.1,GET,http://localhost:8000/,1703239567,,404
 d9ecf1,127.0.0.1,GET,http://localhost:8000/recensement,1703239574,,200
+b44293,127.0.0.1,GET,http://localhost:8000/,1703240019,,404
+7e857a,127.0.0.1,GET,http://localhost:8000/recensement,1703240027,,200
+18dba4,127.0.0.1,GET,http://localhost:8000/recensement,1703240245,,200
+2b4315,127.0.0.1,GET,http://localhost:8000/recensement,1703240287,,200
+8b6acf,127.0.0.1,GET,http://localhost:8000/recensement,1703241776,,200
+e99960,127.0.0.1,GET,http://localhost:8000/,1703242779,,404
+c4b2c9,127.0.0.1,GET,http://localhost:8000/recensement,1703242817,,200
+09c1b1,127.0.0.1,GET,http://localhost:8000/recensement,1703242826,,200
+75fc30,127.0.0.1,GET,http://localhost:8000/,1703242901,,404
+2897f6,127.0.0.1,GET,http://localhost:8000/recensement,1703242912,,200
+9b2722,127.0.0.1,GET,http://localhost:8000/recensement,1703244587,,200
+54aeca,127.0.0.1,GET,http://localhost:8000/recensement,1703244592,,200
+a62fda,127.0.0.1,GET,http://localhost:8000/recensement,1703244604,,200
+e0cfc7,127.0.0.1,GET,http://localhost:8000/recensement,1703244680,,200
