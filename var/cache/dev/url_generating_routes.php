@@ -17,7 +17,6 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_controler_react' => [[], ['_controller' => 'App\\Controller\\ControlerReactController::index'], [], [['text', '/recensement']], [], [], []],
-    'app_controle_search' => [[], ['_controller' => 'App\\Controller\\ControlerReactController::search'], [], [['text', '/recensement/search_habitant']], [], [], []],
     'app_insert_recensement' => [[], ['_controller' => 'App\\Controller\\InsertRecensementController::index'], [], [['text', '/recensement/insert']], [], [], []],
     'app_search_recensement' => [[], ['_controller' => 'App\\Controller\\SearchRecensementController::index'], [], [['text', '/recensement/search']], [], [], []],
 ];

@@ -10,6 +10,9 @@ function Home(){
             <div>
                <h1>Recensement des habitants</h1> 
             </div>
+            <div>
+                <img scr="images/logo.jpeg"></img>
+            </div>
         </div>
     );
 

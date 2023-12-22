@@ -15,7 +15,6 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/recensement' => [[['_route' => 'app_controler_react', '_controller' => 'App\\Controller\\ControlerReactController::index'], null, null, null, false, false, null]],
-        '/recensement/search_habitant' => [[['_route' => 'app_controle_search', '_controller' => 'App\\Controller\\ControlerReactController::search'], null, null, null, false, false, null]],
         '/recensement/insert' => [[['_route' => 'app_insert_recensement', '_controller' => 'App\\Controller\\InsertRecensementController::index'], null, null, null, false, false, null]],
         '/recensement/search' => [[['_route' => 'app_search_recensement', '_controller' => 'App\\Controller\\SearchRecensementController::index'], null, null, null, false, false, null]],
     ],
