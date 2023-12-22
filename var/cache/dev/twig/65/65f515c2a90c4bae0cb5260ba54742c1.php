@@ -201,6 +201,6 @@ class __TwigTemplate_77b5eddedb60fa6242a569294166155c extends Template
         
     </body>
 </html>
-", "base.html.twig", "/home/electropro/Documents/symfProjet/tp2/templates/base.html.twig");
+", "base.html.twig", "/home/stud/Documents/Admin_web/TP6/tpweb/templates/base.html.twig");
     }
 }

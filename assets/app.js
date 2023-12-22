@@ -29,7 +29,6 @@ root.render(
     <React.StrictMode>
       <Home/>
       <Formulaire/>
-      <Search/>
       <ShowHabitants/>
     </React.StrictMode>
 )

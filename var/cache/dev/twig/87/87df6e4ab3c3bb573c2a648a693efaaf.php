@@ -164,6 +164,6 @@ class __TwigTemplate_4ad93cf68c5a4cbbc9d361785bd92ecd extends Template
 
 \t</div>
 {% endblock %}
-", "controler_react/index.html.twig", "/home/stud/Documents/Admin_web/TP6/projetWeb/templates/controler_react/index.html.twig");
+", "controler_react/index.html.twig", "/home/stud/Documents/Admin_web/TP6/tpweb/templates/controler_react/index.html.twig");
     }
 }
