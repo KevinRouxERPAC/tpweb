@@ -15,7 +15,7 @@ import ReactDOM from 'react-dom/client';
 
 import { Home } from './resources_projet/home.js';
 import {Search} from './resources_projet/search_habitant.js';
-import {Formulaire} from './resources_projet/formulaire.js';
+import {Formulaire} from './resources_projet/formulaire.jsx';
 import {ShowHabitants} from './resources_projet/liste_habitants.js';
 
 registerReactControllerComponents(require.context('./react/controllers', true, /\.(j|t)sx?$/));

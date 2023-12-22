@@ -9,17 +9,25 @@ use App\Repository\HabitantRepository;
 
 class InsertRecensementController extends AbstractController
 {
-    #[Route('/recensement/insert', name: 'app_insert_recensement')]
-    public function index(HabitantRepository $habitantRepository): Response
+    #[Route("/api/form", name:"api_form", methods:"POST")]
+    /**
+     * @Route("/api/form", name="api_form", methods={"POST"})
+     */
+    public function postForm(HabitantRepository $habitantRepository, Request $request, EntityManagerInterface $entityManager): Response
     {
-        return $this->render('insert_recensement/index.html.twig', [
-            'controller_name' => 'ControlerReactController',
-             //'habitants' => $habitantRepository->findAll(),
-             'formulaire' =>''
-          
-            
-        ]);
+        $data = json_decode($request->getContent(), true);
 
-      
+        $form = new Habitant();
+        $form->setNom($data['nom']);
+        $form->setPrenom($data['prenom']);
+        $form->setAdresse($data['adresse']);
+        $form->setTelephone($data['telephone']);
+        $form->setDate($data['date_naissance']);
+        $form->setEmail($data['email']);
+        
+        $entityManager->persist($form);
+        $entityManager->flush();
+
+        return new Response('Form created successfully', Response::HTTP_CREATED);
     }
 }
