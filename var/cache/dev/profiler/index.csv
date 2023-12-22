@@ -411,3 +411,7 @@ bbf97c,127.0.0.1,GET,http://localhost:8000/recensement,1703232104,,200
 2a83d0,127.0.0.1,GET,http://localhost:8000/recensement,1703232142,,200
 e0452a,127.0.0.1,GET,http://localhost:8000/,1703239567,,404
 d9ecf1,127.0.0.1,GET,http://localhost:8000/recensement,1703239574,,200
+ebb75f,127.0.0.1,GET,http://localhost:8000/recensement,1703276483,,200
+a6655b,127.0.0.1,GET,http://localhost:8000/recensement,1703276544,,200
+f3d87a,127.0.0.1,GET,http://localhost:8000/recensement,1703276662,,200
+ecfc92,127.0.0.1,GET,http://localhost:8000/recensement,1703276679,,200

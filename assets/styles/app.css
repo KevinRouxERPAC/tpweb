@@ -1,3 +1,59 @@
 body {
-    background-color: lightgray;
-}
+    background-color:rgb(236, 231, 231);
+  }
+  
+  table{
+  
+    border-collapse: separate; /* Rejoint les bordures adjacentes */
+    width: 100%; /* Largeur totale du tableau */
+    text-align: center; /* Alignement du texte au centre */
+    color: #428d92; /* Couleur du texte */
+    font-family: Arial, sans-serif; /* Police du texte */
+  
+    display: list-item;
+    border-radius: 20px;
+  }
+  
+  
+  table th, table td {
+  
+    padding: 8px; /* Espacement entre le contenu de la cellule et la bordure */
+  }
+  
+  table th {
+    background-color: #f2f2f2; /* Couleur d'arrière-plan de l'en-tête */
+    border-bottom: 1px solid #ccc; /* Bordure inférieure de l'en-tête */
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur d'arrière-plan des lignes paires */
+  }
+  
+  table tr:hover {
+    background-color: #ddd; /* Couleur d'arrière-plan lors du survol */
+  }
+  
+  label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #04788d;
+      background-color: none;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
+  button {
+      background-color: #77aff8;
+      border: none;
+      color: white;
+      padding: auto;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      border-radius: 5px;
+  }
