@@ -28,7 +28,9 @@ function Search(){
         <form onSubmit={handleSubmit}>
         <div>
         <br></br>
-          <div>Recherche d'un habitant</div>
+          <div>
+            <h3>Recherche d'un habitant</h3>
+          </div>
           <label>
             Nom :
             <input type="text" name="nom"

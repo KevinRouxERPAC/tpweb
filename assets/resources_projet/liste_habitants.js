@@ -2,11 +2,27 @@ import React, { useState } from 'react';
 
 function ShowHabitants() {
  const [data, setData] = useState([
-    { id: 1, name: 'Doe', surname: 'John' },
+    { 
+      id: 1, 
+      name: 'Doe', 
+      surname: 'John',
+      birth: '15/02/1986',
+      destination: '26 rue des Coquelicots',
+      email: 'doe.john@email.com',
+      phone: '0652144553'
+    },
  ]);
 
  const addRow = () => {
-    setData([...data, { id: data.length + 1, name: 'Doe', surname: 'John' }]);
+    setData([...data, { 
+      id: data.length + 1, 
+      name: 'Doe', 
+      surname: 'John',
+      birth: '15/02/1986',
+      destination: '26 rue des Coquelicots',
+      email: 'doe.john@email.com',
+      phone: '0652144553' 
+    }]);
  };
 
  const editFunction = (id) => {
@@ -19,7 +35,7 @@ function ShowHabitants() {
 
  return (
     <div>
-      <h2>Tableau</h2>
+      <h3>Tableau</h3>
 
       <table>
         <tr>
@@ -29,13 +45,15 @@ function ShowHabitants() {
           <th>Adresse</th>
           <th>Email</th>
           <th>Téléphone</th>
-          <th>Action</th>
         </tr>
         {data.map((item) => (
           <tr key={item.id}>
-            <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.surname}</td>
+            <td>{item.birth}</td>
+            <td>{item.destination}</td>
+            <td>{item.email}</td>
+            <td>{item.phone}</td>
             <td>
               <button onClick={() => editFunction(item.id)}>Editer</button>
               <button onClick={() => deleteFunction(item.id)}>Supprimer</button>

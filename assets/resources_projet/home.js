@@ -6,15 +6,11 @@ import {Formulaire} from './formulaire'
 function Home(){
 
     return (
-        <>
         <div>
-            <div>Home</div>
-            <div><img src="images/logo.jpeg"></img></div>
+            <div>
+               <h1>Recensement des habitants</h1> 
+            </div>
         </div>
-        
-            
-        </>
-
     );
 
 }

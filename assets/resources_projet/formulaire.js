@@ -8,7 +8,7 @@ function Formulaire() {
   const [adresse, setAdresse] = useState('');
   const [email, setEmail] = useState('');
 
-  const [codePostal, setPostal] = useState('');
+  const [telephone, setTelephone] = useState('');
   const [dateDeNaissance, setDate] = useState('');
   const [sex, setSex] = useState('');
 
@@ -23,7 +23,7 @@ function Formulaire() {
       nom,
       prenom,
       adresse,
-      codePostal,
+      telephone,
       sex,
       dateDeNaissance,
       email
@@ -41,6 +41,7 @@ function Formulaire() {
   return (
 
     <div>
+      <h3>Formulaire d'ajout d'habitant</h3>
       <form onSubmit={handleSubmit}>
         <div>
         <br></br>
@@ -61,43 +62,45 @@ function Formulaire() {
         </div>
 
         <div>
-          <label>
-            Adresse :
-            <input type="text" name="Adresse"
-              value={adresse} onChange={(e) => setAdresse(e.target.value)
-              }
-            />
-          </label>
-          <label>
-            Email :
-            <input type="email" name="email"
-              value={email} onChange={(e) => setEmail(e.target.value)
-              }
-            />
-          </label>
-
-        </div>
-
-        <div>
-          <label>
-            Code postal :
-            <input type="number" name="postal"
-              value={codePostal} onChange={(e) => setPostal(e.target.value)
-              }
-            />
-          </label>
-          <label>
+        <label>
             Date de naissance :
             <input type="date" name="naissance"
               value={dateDeNaissance} onChange={(e) => setDate(e.target.value)
               }
             />
           </label>
-          <select value={sex} onChange={handleChange}>
-            <option value="M">Homme</option>
-            <option value="F">Femme</option>
-            <option value="X">X</option>
-          </select>
+          <label>
+            Adresse :
+            <input type="text" name="adresse"
+              value={adresse} onChange={(e) => setAdresse(e.target.value)
+              }
+            />
+          </label>
+        </div>
+
+        <div>
+        <label>
+            Email :
+            <input type="email" name="email"
+              value={email} onChange={(e) => setEmail(e.target.value)
+              }
+            />
+          </label>
+          <label>
+            Téléphone :
+            <input type="number" name="postal"
+              value={telephone} onChange={(e) => setTelephone(e.target.value)
+              }
+            />
+          </label>
+          <label>
+            Genre :
+            <select value={sex} onChange={handleChange}>
+              <option value="M">Homme</option>
+              <option value="F">Femme</option>
+              <option value="X">Autre</option>
+            </select>
+          </label>
 
         </div>
         <input type="submit" value="Envoyer" />
